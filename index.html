@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>calculator</title>
+    <title>Calculator</title>
 </head>
 
 <body>
@@ -32,24 +32,7 @@
         </div>
         <div class="buttton equal-btn " onclick="getResult() ">=</div>
     </div>
-    <script>
-        let display = document.getElementById('display');
-
-        function inputValue(val) {
-            var currentVal = display.innerHTML && display.innerHTML != '0' ? display.innerHTML : 0;
-            display.innerHTML = currentVal + val;
-        }
-
-        function getResult() {
-            var currentVal = display.innerHTML ? display.innerHTML : 0;
-            display.innerHTML = eval(currentVal);
-        }
-
-        function clearValue() {
-            display.innerHTML = 0;
-        }
-    </script>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>
